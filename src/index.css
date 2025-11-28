@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-900 text-gray-100 antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-dark-600 rounded hover:bg-dark-500;
+  }
+}
+
+@layer components {
+  .card-dark {
+    @apply bg-dark-800 border border-dark-700 rounded-lg p-6 shadow-dark hover:shadow-lg transition-shadow duration-300;
+  }
+
+  .card-interactive {
+    @apply card-dark hover:border-accent-cyan hover:shadow-glow-cyan cursor-pointer transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-accent-blue to-accent-cyan text-dark-900 font-semibold rounded-lg hover:shadow-glow-cyan transition-all duration-300 hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-dark-700 text-gray-100 font-semibold rounded-lg border border-dark-600 hover:border-accent-cyan transition-all duration-300;
+  }
+
+  .btn-ghost {
+    @apply text-gray-300 hover:text-accent-cyan transition-colors duration-300;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent-cyan to-accent-blue bg-clip-text text-transparent;
+  }
+
+  .page-transition {
+    @apply animate-fade-in;
+  }
+}

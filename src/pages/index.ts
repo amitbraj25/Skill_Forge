@@ -1,0 +1,11 @@
+export { LandingPage } from './LandingPage';
+export { LoginPage } from './LoginPage';
+export { RegisterPage } from './RegisterPage';
+export { StudentDashboard } from './StudentDashboard';
+export { CourseCatalog } from './CourseCatalog';
+export { CoursePlayer } from './CoursePlayer';
+export { CourseDetail } from './CourseDetail';
+export { StudentPerformance } from './StudentPerformance';
+export { InstructorDashboard } from './InstructorDashboard';
+export { InstructorCourseManagement } from './InstructorCourseManagement';
+export { AdminDashboard } from './AdminDashboard';
